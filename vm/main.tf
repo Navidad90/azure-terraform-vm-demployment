@@ -67,4 +67,7 @@ resource "azurerm_windows_virtual_machine" "vm1" {
   source_image_reference {
     publisher = "MicrosoftWindowsDesktop"
     offer     = "windows-11"
-    sku
+      sku       = "win11-22h2-entn"
+      version   = "22621.4751.250111"  # Exact version for Germany West Central
+    }
+  }
