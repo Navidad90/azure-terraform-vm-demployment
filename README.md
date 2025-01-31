@@ -1,44 +1,19 @@
 Azure Terraform VM Deployment
 
-Step 1: Prerequisites
+This repository contains Terraform configurations for deploying an Azure infrastructure, including:
 
-Before you start, ensure you have the following installed:
+A Virtual Network (VNet) with a subnet.
 
-✅ Terraform CLI
-✅ Azure CLI
-✅ Git (to clone the repository)
+A Network Security Group (NSG) with inbound rules.
 
-Step 2: Clone the Repository
+Two Windows Virtual Machines (VMs) with public IPs.
 
-Open Command Prompt, Terminal, or PowerShell.
+Prerequisites
 
-Clone the repository from GitHub:
-git clone https://github.com/Navidad90/azure-terraform-vm-deployment.git
-Navigate into the directory:
-cd azure-terraform-vm-deployment
+Before deploying, ensure you have:
 
-Step 3: Authenticate with Azure
+Terraform CLI installed
 
-Login to Azure:
-az login
-az account set --subscription "<your-subscription-id>"
+Azure CLI installed
 
-Step 4: Deploy Infrastructure
-
-Now, apply the Terraform code folder by folder.
-1️⃣ Deploy Virtual Network (VNet)
-cd vnet
-terraform init
-terraform apply -auto-approve
-cd ..
-
-2️⃣ Deploy Network Security Group (NSG)
-cd nsg
-terraform init
-terraform apply -auto-approve
-cd ..
-
-3️⃣ Deploy Virtual Machines (VMs)
-cd vm
-terraform init
-terraform apply -auto-approve
+Git installed
